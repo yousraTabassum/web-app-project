@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dropdown</title>
+    <link rel="stylesheet" href="userprofile_drop.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Profile Button -->
+        <button class="profile-button" onclick="toggleDropdown()">
+            Yousra Tabassum
+        </button>
+
+        <!-- Dropdown Menu -->
+        <div id="dropdownMenu" class="dropdown-content">
+            <a href="#">Your profile  <button onclick="window.location.href='user_profile.html'">Profile</button></a>
+            <a href="#">Schedule</a>
+            <a href="#">Mark Sheet</a>
+            <a href="#">Apps and Offers</a>
+            <a href="#">Theme: Light</a>
+            <a href="#">Account settings</a>
+            <a href="#">Log out</a>
+        </div>
+    </div>
+
+    <script src="userprofile_drop.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>

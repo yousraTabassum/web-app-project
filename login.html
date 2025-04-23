@@ -2,38 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyMate</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://img.freepik.com/premium-vector/realistic-reading-desk-vector-illustration_1253202-6139.jpg" rel="stylesheet">
+    <link rel="stylesheet" href="login_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>StudyMate - AI Powered Personalized Study Assistant </title>
 </head>
 <body>
-    <div class="container">
-        </div class= "right-section">
-        <h2>Log In</h2>
-        <button class="google-login">
-            Continue with Google
-          </button>
-          <p class="or">OR</p>
-        <form id="sign-in-form">
-          <div class="form-group">
-            <input type="text" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <input type="password" placeholder="Password" required>
-          </div>
-          <div class="form-group">
-            <input type="password" placeholder="Repeat your password" required>
-          </div>
-            <button type="submit">Log In</button>
-        </form>
-        <p class = "signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
-    </div>
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <span>Already have an account?</span>
+                <header>Log In <header>
+            </div>
 
-    <!-- Firebase & App Logic -->
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Username" required>
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-field">
+                <input type="password" class="input" placeholder="Password" required>
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-field">
+                <button onclick="window.location.href='homepage.html'">Log In</button>
+            </div>
+
+            <div class="bottom">
+                <div class="left">
+                    <input type="checkbox"  id="check">
+                    <label for="check"> Remember Me</label>
+                </div>
+                <div class="right">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Firebase & App Logic -->
     <script src="firebase.js" type="module"></script>
     <script src="app.js" type="module"></script>
 </body>

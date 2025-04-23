@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Materials</title>
+    <link rel="stylesheet" href="material.css">
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload Your Study Materials</h2>
+        <form id="uploadForm">
+            <input type="text" id="materialTitle" placeholder="Material Title" required>
+            <input type="file" id="materialFile" required>
+            <button type="submit">Upload</button>
+        </form>
+
+        <h3>Your Uploaded Materials</h3>
+        <ul id="materialList"></ul>
+    </div>
+    <script src="upload.js"></script>
+</body>
+</html>

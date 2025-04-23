@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     background-color:#d6dee6;
     display: flex;
     justify-content: center;
@@ -9,16 +9,19 @@ body {
 }
 
 .container {
-    background-color:#d6dee6;
+    background-color:#c9d9e9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
+    text-align: center;
+    color:#458ba0 ;
+    
 }
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #458ba0;
 }
 
 form {
@@ -29,7 +32,7 @@ form {
 input {
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #a1bad8;
     border-radius: 4px;
     font-size: 14px;
 }
@@ -45,7 +48,7 @@ button {
 }
 
 button:hover {
-    background-color: #458ba0;
+    background-color: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
 .error-message {
      color: red;  
