@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Materials</title>
-    <link rel="stylesheet" href="material.css">
+  <meta charset="UTF-8">
+  <title>Materials</title>
+  <link rel="stylesheet" href="material.css">
 </head>
 <body>
-    <div class="upload-container">
-        <h2>Upload Your Study Materials</h2>
-        <form id="uploadForm">
-            <input type="text" id="materialTitle" placeholder="Material Title" required>
-            <input type="file" id="materialFile" required>
-            <button type="submit">Upload</button>
-        </form>
+  <div class="container">
+    <header>
+      <h1>Study Materials</h1>
+    </header>
 
-        <h3>Your Uploaded Materials</h3>
-        <ul id="materialList"></ul>
-    </div>
-    <script src="js/storage.js"></script>
-    <script src="js/materials.js"></script>
+    <section class="upload-section">
+      <h2>Upload New Material</h2>
+      <form id="uploadForm" enctype="multipart/form-data">
+        <input type="text" id="materialTitle" placeholder="Enter Material Title" required>
+        <input type="file" id="materialFile" accept=".pdf,.doc,.docx,.txt,.ppt,.pptx" required>
+        <button type="submit">Upload</button>
+      </form>
+    </section>
 
+    <section class="list-section">
+      <h2>Uploaded Materials</h2>
+      <ul id="materialList"></ul>
+    </section>
+  </div>
+
+  <script src="js/upload.js"></script> 
 </body>
 </html>

@@ -1,59 +1,93 @@
 body {
-    font-family: "Times New Roman", Times, serif;
-    background: #d6dee6;
-    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #d6dee6;
     margin: 0;
-}
-
-.upload-container {
-    max-width: 700px;
-    margin: auto;
-    background: #c9d9e9;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2, h3 {
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #c9d9e9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  header {
     text-align: center;
-    color:#3c7c8f ;
-}
-
-form {
+    margin-bottom: 40px;
+  }
+  h1{
+    color:#3c7c8f;
+  }
+  .upload-section,
+  .list-section {
+    margin-bottom: 50px;
+  }
+  
+  .upload-section h2,
+  .list-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3c7c8f;
+  }
+  
+  #uploadForm {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-
-input[type="text"], input[type="file"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
+  }
+  
+  #uploadForm input,
+  #uploadForm textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #3c7c8f;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  #uploadForm button {
+    padding: 12px;
     background-color: #3a7a9f;
     color: white;
+    font-size: 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-}
-
-button:hover {
+    transition: background-color 0.3s;
+  }
+  
+  #uploadForm button:hover {
     background-color: #1f709e;
-}
-
-#materialList {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-#materialList li {
-    background: #f9f9f9;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
+  }
+  
+  #materialsList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .material-item {
+    background-color: #e8f0fe;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .material-item h3 {
+    margin: 0 0 10px;
+    color: #1a73e8;
+  }
+  
+  .material-item p {
+    margin: 0;
+    color: #555;
+  }
+  
+  .material-item small {
+    display: block;
+    margin-top: 10px;
+    color: #999;
+  }
+  
