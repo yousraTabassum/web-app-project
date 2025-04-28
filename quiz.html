@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create and Take Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create a Quiz</h1>
+    <input type="text" id="quizQuestion" placeholder="Enter a question">
+    <input type="text" id="quizAnswer" placeholder="Enter the correct answer">
+    <button onclick="addQuiz()">Add Question</button>
+
+    <h2>Start Quiz</h2>
+    <button onclick="startQuiz()">Start Quiz ➔</button>
+    <div id="quizArea"></div>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/quiz.js"></script>
+
+</body>
+</html>
