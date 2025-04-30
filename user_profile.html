@@ -1,84 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyMate - AI Powered Personalized Study Assistant</title>
-    <link rel="stylesheet" href="user_profile.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <title>StudyMate - AI Powered Personalized Study Assistant</title>
+  <link rel="stylesheet" href="user_profile.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
 </head>
+
 <body>
-    <div class="dashboard-container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <h2><i class="fas fa-graduation-cap"></i> StudyMate</h2>
-            <img src="/profile.jpg" alt=""profile height="150">
+  <aside class="sidebar">
+    <h2><i class="fas fa-graduation-cap"></i> User Profile</h2>
+
+    <div class="profile-container">
+      <div class="profile-card">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
         
-            <div class="profile-section">
-                <h2>My Profile</h2>
-                <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" readonly>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" readonly>
-                <label for="Institute">Institute:</label>
-                <input type="text" id="study" name="study"  readonly>
-                <button onclick="enableEditing()"> <img src="/icon.webp" alt=""icon height="20"></button>
-                <button onclick="saveProfile()" style="display:none;">Save Changes</button>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="my_material.html">My materials</a></li>
-                    <li><a href="#">Assignments</a></li>
-                    <li><a href="#">Notes</a></li>
-                    <li><a href="quiz.html">Quiz</a></li>
-                    <li><a href="material.html">Upload Materials</a></li>
-                </ul>
-            </nav>
-        </aside>
-        
-        <!-- Main Content -->
-        <main class="main-content">
-            <h1>Student Dashboard</h1>
-            
-            <!-- Active Subjects -->
-            <section class="active-subjects">
-                <h3>Active Subjects</h3>
-                <div class="subjects">
-                    <div class="subject">
-                        <i class="fas fa-desktop"></i>
-                        <h4>Computing</h4>
-                        <p>1 assignment / 1 exam</p>
-                    </div>
-                    <div class="subject">
-                        <i class="fas fa-calculator"></i>
-                        <h4>Math</h4>
-                        <p>2 assignments / 1 exam</p>
-                    </div>
-                    <div class="subject">
-                        <i class="fas fa-book"></i>
-                        <h4>History</h4>
-                        <p>1 assignment / 1 exam</p>
-                    </div>
-                    <div class="subject">
-                        <i class="fas fa-globe"></i>
-                        <h4>Geography</h4>
-                        <p>0 assignments / 0 exams</p>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- To-Do List -->
-            <section class="todo-list">
-                <h3>To-Do</h3>
-                <ul>
-                    <li>Assignment 2 - <span>Math - Feb 7, 2025</span></li>
-                    <li>Assignment 3 - <span>Math - Feb 14, 2025</span></li>
-                    <li>Study for history exam - <span>History - Feb 15, 2025</span></li>
-                    <li>Setup Python Code - <span>Computing - Mar 10, 2025</span></li>
-                </ul>
-            </section>
-        </main>
+        <h2>My Profile</h2>
+        <div class="profile-info">
+          <label for="fullName">Full Name:</label> 
+          <label for="email">Email:</label> 
+          <label for="Institute">Institute:</label>
+          <label for="Phone number">Phone Number:</label>
+        </div>
+      </div>
     </div>
+  </aside>
+
+
+  <div class="studymate-container">
+    <h2 class="studymate-title">StudyMate - AI Powered Personalized Study Assistant</h2>
+    <div class="profile-button">
+      <a href="my_material.html">My materials</a>
+      <a href="#">Assignments</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="material.html">Upload Materials</a>
+      <a href="Progress Sheet">Progress Sheet</a>
+      <div class="dashboard-container">
+        <h2> My Quiz Scores</h2>
+        <table id="scoresTable">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Score</th>
+              <th>Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>

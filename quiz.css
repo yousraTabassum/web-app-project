@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background: #d6dee6;
     margin: 0;
     padding: 20px;
@@ -14,17 +14,12 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
   
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #3c7c8f;
-    border-radius: 5px;
-
+  .question {
+    margin-bottom: 20px;
   }
   
-  button {
+  .submit-btn {
+    text-align: center;
     background: #3a7a9f;
     color: white;
     padding: 10px 20px;
@@ -34,12 +29,31 @@ body {
     cursor: pointer;
   }
   
-  h1{
+  .submit-btn:hover {
+    background: #1f709e;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
-    color:#3c7c8f ;
-}
+  }
+
+  button {
+    text-align: center;
+    background: #3a7a9f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
   h2{
     color:#3c7c8f ;
+    text-align: center;
   }
 
   button:hover {

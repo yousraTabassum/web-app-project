@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +9,34 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>StudyMate - AI Powered Personalized Study Assistant </title>
 </head>
+
 <body>
-    <div class="box">
-        <div class="container">
-            <div class="top-header">
-                <span>Already have an account?</span>
-                <header>Log In <header>
-            </div>
+    <div class="container">
 
-            <div class="input-field">
-                <input type="text" class="input" placeholder="Username" required>
-                <i class="bx bx-user"></i>
-            </div>
-            <div class="input-field">
-                <input type="password" class="input" placeholder="Password" required>
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="input-field">
+
+        <div id="log-in-container">
+            <h3>Log In</h3>
+            <form id="sign-up-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="sign-up-email" placeholder="Email" required>
+                <input type="password" id="sign-up-password" placeholder="Password" required>
                 <button onclick="window.location.href='homepage.html'">Log In</button>
+            </form>
+        </div>
+        <div class="bottom">
+             <div class="left">
+                <input type="checkbox" id="check">
+                <label for="check"> Remember Me</label>
             </div>
-
-            <div class="bottom">
-                <div class="left">
-                    <input type="checkbox"  id="check">
-                    <label for="check"> Remember Me</label>
-                </div>
-                <div class="right">
-                    <label><a href="#">Forgot password?</a></label>
-                </div>
+            <div class="right">
+                <label><a href="#">Forgot password?</a></label>
             </div>
         </div>
     </div>
-     <!-- Firebase & App Logic -->
+    </div>
+
     <script src="firebase.js" type="module"></script>
     <script src="app.js" type="module"></script>
 </body>
+
 </html>
